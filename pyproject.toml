@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mol"
+version = "1.0.0"
+description = "Input-Adaptive Depth Routing with Mixture of Layers"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "torch>=2.1",
+    "transformers>=4.40",
+    "datasets>=2.14",
+    "accelerate>=0.27",
+    "numpy",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["mol*"]
+exclude = ["tests*"]
