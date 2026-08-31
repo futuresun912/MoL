@@ -1,7 +1,7 @@
 # MoL — Input-Adaptive Depth Routing with Mixture of Layers
 
 Code release accompanying the paper
-**“Input-Adaptive Depth Routing in Pretrained Large Language Models with Mixture of Layers”** (ICDM 2026 submission).
+**“Input-Adaptive Depth Routing in Pretrained Large Language Models with Mixture of Layers”** (ICDM 2026).
 
 MoL replaces each decoder layer of a pretrained LLM with a routed module that
 either **skips**, **executes**, or **repeats** the layer per input, under a
@@ -146,13 +146,20 @@ The test suite verifies module imports, router behaviour, TopK assignment
 correctness, and a 5-step end-to-end smoke test (uses a tiny synthetic
 Llama config — runs in under a minute, no large model download required).
 
+## Citation
+
+If you find this code useful in your research, please cite:
+
+```bibtex
+@inproceedings{mod2026,
+  title={Input-Adaptive Depth Routing in Pretrained Large Language Models with Mixture of Layers},
+  author={Sun, Lu and Wen, Rui and Liu, Jiayang and Sakuma, Jun},
+  booktitle={IEEE International Conference on Data Mining (ICDM)},
+  year={2026}
+}
+```
+
 ## License
 
 Released under the MIT License for academic review and follow-up research.
 
-## Note for reviewers
-
-This release contains the **core** code path used to produce Tables I/II
-and Figures 5/6 in the submission, refactored for clarity. The full
-research codebase (additional baselines, plotting utilities, raw logs)
-is available upon de-anonymization.
