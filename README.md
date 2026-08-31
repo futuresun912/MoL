@@ -151,7 +151,7 @@ Llama config — runs in under a minute, no large model download required).
 If you find this code useful in your research, please cite:
 
 ```bibtex
-@inproceedings{mod2026,
+@inproceedings{mol2026,
   title={Input-Adaptive Depth Routing in Pretrained Large Language Models with Mixture of Layers},
   author={Sun, Lu and Wen, Rui and Liu, Jiayang and Sakuma, Jun},
   booktitle={IEEE International Conference on Data Mining (ICDM)},
